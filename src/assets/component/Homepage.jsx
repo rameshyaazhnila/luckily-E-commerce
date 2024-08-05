@@ -1,24 +1,29 @@
 import React from 'react'
 import products from './product'
+import { useContext } from 'react'
+import { AppContext } from './Contexthook'
+import useAos from '../CustomAos';
 
-const Homepage = ({items,setitems}) => {
+const Homepage = () => {
+    useAos()
+    const{items,setItems}=useContext(AppContext);
 
     const Addcart=(receive)=>{
-        setitems([...items,receive])
+        setItems([...items,receive])
     }
     const Removecart=(receive)=>{
-        setitems(items.filter(curr=>curr.id!=receive.id))
+        setItems(items.filter(curr=>curr.id!=receive.id))
     }
 
   return (
     <>
         <div>
             <ul className='bg-black flex flex-wrap items-center justify-center gap-y-8'>
-                {products.map((product)=><li key={product.id} className='text-white font-bold flex flex-col items-center'>
+                {products.map((product)=><li key={product.id}  className='text-white font-bold flex flex-col items-center'>
                     <div className='h-[300px] w-[200px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]'>
-                        <img src={product.image} alt="dress"className='w-[100%] h-[100%] object-cover'/>
+                        <img src={product.image} alt="dress" className='w-[100%] h-[100%] object-cover sm:p-2 md:p-3 lg:p-4'/>
                     </div>
-                    <div className='py-2'>
+                    <div className='py-2' data-aos="fade-down">
                         <h1>{product.brand}</h1>
                         <h2>price:${product.price}</h2>
                         <p>{product.delivery}</p>
