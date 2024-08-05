@@ -27,13 +27,13 @@ const Buynow = () => {
     },[items])
   return (
     
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center overflow-x-hidden'>
           {items.map((item)=>
-          <div key={item.id} className='flex items-center gap-5 m-10'>
-            <div className='w-[200px] h-[230px]'>
-              <img src={item.image} alt="" className='w-[100%] h-[100%] object-cover' data-aos="fade-down"/>
+          <div key={item.id} className='flex items-center justify-center gap-5 space-y-7'>
+            <div className='w-[180px] h-[220px]'>
+              <img src={item.image} alt="" className='w-[100%] h-[100%] object-cover p-2' data-aos="fade-down"/>
             </div>
-            <div className='flex flex-col justify-center text-white font-bold' data-aos="zoom-in-left">
+            <div className='flex flex-col justify-center text-white font-bold p-2' data-aos="zoom-in-left">
               <h2>{item.brand}</h2>
               <p>{item.delivery}</p>
               <h2>price : Rs-{item.price}</h2>
@@ -43,13 +43,13 @@ const Buynow = () => {
             </div>
             
            </div>)}
-           {show&&<div className='fixed w-[400px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 flex justify-around z-15 bottom-12'>
+           {show&&<div className='fixed w-[300px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 m-3 flex bottom-12 justify-around z-15  items-center'>
             <div>
               
-              <p>delivery..................................</p>
-              <p>Total quantity.................................</p>
-              <p>Gst.............................................</p>
-              <p>total amt................................</p>
+              <p>delivery...............</p>
+              <p>Total quantity.....</p>
+              <p>Gst...............................</p>
+              <p>total amt.................</p>
             </div>
             <div>
               

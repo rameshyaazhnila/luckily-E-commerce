@@ -17,7 +17,7 @@ const Nav = () => {
     
   return (<>
     
-        <div className='sticky pt-5 top-0 backdrop-blur-[60px] text-white  flex justify-between items-center px-5 py-2 font-semibold'>
+        <div className='sticky pt-5 top-0 backdrop-blur-[60px] text-white flex justify-between items-center px-5 py-2 font-semibold overflow-x-hidden w-[100vw]'>
             <h1 className='text-4xl md:text-3xl lg:text-4xl bg-gradient-to-r from-pink-300 to-pink-700 bg-clip-text text-transparent'>Luckily</h1>
             <div>
                 <ul className='hidden cursor-pointer md:flex justify-between items-center gap-4 md:text-md md:text-xl lg:text-2xl'>

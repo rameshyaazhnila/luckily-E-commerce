@@ -65,12 +65,12 @@ const Pay = () => {
                 </div>
             </div>
          </div>
-         <div className='w-[400px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 flex justify-around z-15 bottom-12'>
+         <div className='w-[300px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 flex justify-around z-15 bottom-12'>
             <div>
-              <p>delivery.................</p>
-              <p>Total quantity............</p>
-              <p>Gst...................................................</p>
-              <p>total amt..............................................</p>
+              <p>delivery..................</p>
+              <p>Total quantity...</p>
+              <p>Gst............................</p>
+              <p>total amt...............</p>
             </div>
             {!show?<div>
               
@@ -98,7 +98,7 @@ const Pay = () => {
         
       </div>    
       <div className='p-4 font-medium fixed bottom-0 bg-green-600 w-screen flex justify-center items-center z-10 '>
-           <a href="mailto:Rameshyaazhnila@gmail.com" className='text-2xl text-white cursor-pointer'>Rameshyaazhnila@gmail.com</a>
+           <a href="mailto:Rameshyaazhnila@gmail.com" className='text-xl text-white cursor-pointer'>Rameshyaazhnila@gmail.com</a>
           </div>
     </>
   );

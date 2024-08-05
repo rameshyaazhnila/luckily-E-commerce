@@ -30,9 +30,9 @@ const Mycart = () => {
   
   return (
     <>
-      {items.length>0?<div className='flex flex-wrap justify-center items-center'>
+      {items.length>0?<div className='flex flex-wrap justify-center items-center gap-5'>
           {items.map((item)=>
-          <div key={item.id} className='flex items-center gap-5 m-10'>
+          <div key={item.id} className='flex items-center justify-center gap-4 space-y-5'>
             <div className='w-[200px] h-[230px]'>
               <img src={item.image} alt="" className='w-[100%] h-[100%] object-cover' data-aos="zoom-in"/>
             </div>

@@ -20,7 +20,7 @@ const Homepage = () => {
         <div>
             <ul className='bg-black flex flex-wrap items-center justify-center gap-y-8'>
                 {products.map((product)=><li key={product.id}  className='text-white font-bold flex flex-col items-center'>
-                    <div className='h-[300px] w-[200px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]'>
+                    <div className='h-[200px] w-[150px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]'>
                         <img src={product.image} alt="dress" className='w-[100%] h-[100%] object-cover sm:p-2 md:p-3 lg:p-4'/>
                     </div>
                     <div className='py-2' data-aos="fade-down">

@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=''>
+    <div className='flex justify-center items-center max-w-[300px] mx-auto'>
       <form onSubmit={onSubmit} className="formdata">
         <h1 className="font-semibold text-white text-2xl">Contact Us</h1>
         <div className="container">

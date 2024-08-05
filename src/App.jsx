@@ -27,9 +27,8 @@ const App = () => {
     <AppContext.Provider value={{items,setItems,select,setSelect,show,setShow}}>
       
       <BrowserRouter>
-      <div className='sticky top-0 z-10 md:top-5'>
+      <div className='sticky top-0 left-0 z-10 md:top-5'>
         <Nav/>
-    
       </div>
       <div className='flex justify-center py-10 z-2'>
         <Routes>

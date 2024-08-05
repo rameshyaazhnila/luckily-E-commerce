@@ -31,7 +31,7 @@ const Selective = () => {
     }
   return (
     
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-wrap justify-center items-center overflow-x-hidden'>
           {select.map((item)=>
           <div key={item.id} className='flex items-center gap-5 m-10'>
             <div className='w-[200px] h-[230px]'>
@@ -47,13 +47,13 @@ const Selective = () => {
             </div>
             
            </div>)}
-           {!show&&<div className='fixed w-[400px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 flex justify-around z-15 bottom-12'>
+           {!show&&<div className='fixed w-[300px] h-[150px] text-white font-normal bg-slate-600 rounded-t-lg p-5 m-3 flex justify-around z-15 bottom-12'>
             <div>
               
-              <p>delivery..................................</p>
-              <p>Total quantity.................................</p>
-              <p>Gst.............................................</p>
-              <p>total amt................................</p>
+              <p>delivery....................</p>
+              <p>Total quantity.......</p>
+              <p>Gst..............................</p>
+              <p>total amt.................</p>
             </div>
             <div>
               

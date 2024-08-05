@@ -7,11 +7,11 @@ const About = () => {
   return (
     <>
     <div>
-      <div className='flex justify-center py-10 z-2'>
+      <div className='flex justify-center items-center py-10 z-2'>
         <Form/>
       </div>
       
-      <div className='flex justify-center py-10 z-2'>
+      <div className='flex justify-center items-center w-[100px] mx-auto py-10 z-2'>
         <Contact/>
       </div>
     </div>
