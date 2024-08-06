@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='flex justify-center items-center max-w-[300px] mx-auto'>
+    <div className='flex justify-center items-center max-w-[330px] mx-auto'>
       <form onSubmit={onSubmit} className="formdata">
         <h1 className="font-semibold text-white text-2xl">Contact Us</h1>
         <div className="container">
@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
         <div className="container">
           <textarea name="message" required />
-          <label className="feedback">Share Your Feedback</label>
+          <label className="feedback w-[230px]">Share Your Feedback</label>
         </div>
         <div className="message">
           <h1 className="text-white absolute font-bold p-5 m-5 z-10">{result}</h1>

@@ -31,7 +31,7 @@ body{
 }
 .form{
     position: relative;
-    width: 300px;
+    width: 330px;
     height: 400px;
     background-color: green;
     display: flex;
