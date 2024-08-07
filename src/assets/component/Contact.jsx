@@ -46,7 +46,6 @@ const Contact = () => {
           <label className="feedback w-[230px]">Share Your Feedback</label>
         </div>
         <div className="message">
-          <h1 className="text-white absolute font-bold p-5 m-5 z-10">{result}</h1>
           {result?<button className="sub">{result}</button>:<button type="submit" className="sub">Send Message</button>}
         </div>
       </form>
