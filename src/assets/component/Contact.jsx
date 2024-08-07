@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] =useState();
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
         <div className="message">
           <h1 className="text-white absolute font-bold p-5 m-5 z-10">{result}</h1>
-          <button type="submit" className="sub">Send Message</button>
+          {result?<button className="sub">{result}</button>:<button type="submit" className="sub">Send Message</button>}
         </div>
       </form>
     </div>
