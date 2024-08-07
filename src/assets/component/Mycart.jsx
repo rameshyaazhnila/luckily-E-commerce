@@ -30,7 +30,7 @@ const Mycart = () => {
   
   return (
     <>
-      {items.length>0?<div className='flex flex-wrap justify-center items-center gap-5'>
+      {items.length>0?<div className='flex flex-wrap justify-center items-center gap-5 pb-5'>
           {items.map((item)=>
           <div key={item.id} className='flex items-center justify-center gap-4 space-y-5'>
             <div className='w-[200px] h-[230px]'>

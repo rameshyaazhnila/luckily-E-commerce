@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import {Menu,X} from 'lucide-react'
 import {Link} from 'react-router-dom';
 import { AppContext } from './Contexthook';
@@ -12,9 +12,6 @@ const Nav = () => {
     const handleclick=()=>{
         setshow(!show)
     }
-    
-    
-    
   return (<>
     
         <div className='sticky pt-5 top-0 backdrop-blur-[60px] text-white flex justify-between items-center px-5 py-2 font-semibold overflow-x-hidden w-[100vw]'>
@@ -45,4 +42,5 @@ const Nav = () => {
   </>)}
 
 export default Nav
+
 
